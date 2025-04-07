@@ -1,0 +1,10 @@
+<div class="seminaires-container">
+  <div *ngFor="let seminaire of seminaires" class="seminaire-card"
+       (mouseenter)="onMouseEnter($event)"
+       (mouseleave)="onMouseLeave($event)">
+    <h3>{{ seminaire.titre }}</h3>
+    <p>Orateur: {{ seminaire.orateur }}</p>
+    <p>Date et lieu: {{ seminaire.dateHeureLieu }}</p>
+    <p>{{ seminaire.resume }}</p>
+  </div>
+</div>

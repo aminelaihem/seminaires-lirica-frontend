@@ -1,0 +1,34 @@
+/* seminaires-list.component.css */
+.seminaire-card {
+  background: linear-gradient(145deg, #6a3093, #a044ff);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  margin: 20px;
+  padding: 20px;
+  width: 100%; /* Full width for better mobile responsiveness */
+  height: 80vh; /* Significant height for focus */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.seminaire-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card on hover */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* Increase the shadow for more depth */
+  background: linear-gradient(145deg, #9d34e6, #f7347a); /* Change the gradient on hover */
+}
+
+.seminaire-card:focus, .seminaire-card:active {
+  outline: none;
+  border: 2px solid #fff; /* Highlight the card when active or focused */
+}
+/* Responsive touch */
+@media (max-width: 768px) {
+  .seminaire-card {
+    width: 95%;
+    height: auto;
+  }
+}

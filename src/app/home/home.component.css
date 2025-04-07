@@ -1,0 +1,22 @@
+.welcome-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 8px solid #ffdd55;
+  backdrop-filter: blur(10px);
+}
+
+.btn-discover {
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff5858, #f09819);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(255, 118, 20, 0.3);
+}
+
+.btn-discover:hover {
+  background: linear-gradient(45deg, #f09819, #ff5858);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(255, 118, 20, 0.45);
+}
